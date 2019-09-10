@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
 
+        Random random = new Random();
+        int min=1;
+        int max=100;
+        randomNumber=random.nextInt(max - min) + min;
 
 	}
 
@@ -39,5 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleReset(View view) {
 		// TODO: Reset tampilan
+        inputAngka.setText("");
+        btnTebak.setEnabled(true);
+        initRandomNumber();
 	}
 }
