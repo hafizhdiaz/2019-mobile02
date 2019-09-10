@@ -13,16 +13,23 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
 	//  TODO: deklarasikan variabel di sini
+	private Button btnTebak;
+	private EditText inputAngka;
+	private int randomNumber;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// TODO: bind layout di sini
+		inputAngka = findViewById(R.id.number_input);
+		btnTebak = findViewById(R.id.guess_button);
+		initRandomNumber();
 	}
 
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
+
 
 	}
 
